@@ -3,9 +3,9 @@ import axios from "axios";
 
 export const fetchNews = createAsyncThunk(
     'news/fetchNews',
-    async (query, thunkAPI) => {
-        const apiUrl = `https://newspoint-server.vercel.app/getdata?q=${query}`;
-        // const apiUrl = `http://localhost:5000/getdata?q=${query}`;
+    async (queryData, thunkAPI) => {
+        // const apiUrl = `https://newspoint-server.vercel.app/getdata?q=${query}`;
+        const apiUrl = `http://localhost:5000/getdata?q=${queryData.query}&page=${queryData.page || 1}`;
         const response = await axios.get(apiUrl);
         return response.data.newsData;
     }

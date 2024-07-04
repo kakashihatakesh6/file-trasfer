@@ -1,23 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react'
-import Search from './Search'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const headerLinks = [
-    { title: 'Politics', href: '/' },
-    { title: 'Sports', href: '' },
-    { title: 'Science', href: '' },
-    { title: 'India', href: '' },
-    { title: 'Technology', href: '' },
-    { title: 'Economy', href: '' },
-    { title: 'Health', href: '' },
-    { title: 'Finance', href: '' },
-    { title: 'Travel', href: '' },
-    { title: 'Food', href: '' },
 
-  ]
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   }
@@ -25,12 +12,13 @@ const Navbar = () => {
   return (
     <div>
 
-      <div className='p-4'>
+      <div className='p-4 shadow-md'>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
 
           {/* logo */}
           <div className='flex items-center'>
-            <a href="/" className='text-red-800 font-bold font-serif uppercase text-3xl tracking-wider'>News Point</a>
+            <a href="/" className='text-red-500 font-bold font-serif uppercase text-3xl tracking-wider'>File 
+            <span className='text-blue-800 skew-y-12 transition-all'> Share</span></a>
           </div>
 
 
@@ -48,7 +36,7 @@ const Navbar = () => {
           {/* Navbar Links (hidden mobile, shown on m and lg screen) */}
           <div className="hidden md:flex space-x-4 font-bold items-center">
             <button href="#" className='text-black hover:text-gray-300 bg-orange-300 outline-blue-300 border-2 px-3 py-1 rounded-md'>Read ePaper</button>
-            <button href="#" className='text-white hover:text-gray-300 uppercase bg-red-600 border-2 px-3 py-1 rounded-md'>Subscribe to toi+</button>
+            <button href="#" className='text-white hover:text-gray-300 uppercase bg-red-600 border-2 px-3 py-1 rounded-md'>Subscribe to np+</button>
 
             <a href="#" className='text-black hover:text-gray-300 uppercase'>Sign In</a>
           </div>
@@ -62,23 +50,6 @@ const Navbar = () => {
                 </svg>
               </button>
             </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div className='overflow-x-hidden'>
-        <div className="max-w-7xl px-4 py-1 border-t-[1px] border-b-[1px] border-slate-400 flex flex-col md:flex-row mx-auto justify-between space-y-2 md:space-y-0 items-center">
-
-          <div className='flex space-x-2 mx-auto md:space-x-6'>
-            {headerLinks.map((item, index) => (
-              <a key={index} href={`/${item?.title?.toLowerCase()}`} className='uppercase'>{item.title}</a>
-            ))}
-
-          </div>
-
-          <div className="flex">
-            <Search />
           </div>
 
         </div>

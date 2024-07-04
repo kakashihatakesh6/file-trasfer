@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# NEWS-POINT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit Site Here - [https://news-point.vercel.app/](https://news-point.vercel.app/)
 
 ## Available Scripts
 
