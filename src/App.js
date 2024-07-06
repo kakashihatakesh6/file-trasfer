@@ -1,4 +1,5 @@
 import './App.css';
+import DemoPage from './components/DemoPage';
 import Home from './components/Home';
 import Navbar from './components/Nabar';
 import {
@@ -17,6 +18,7 @@ function App() {
         <div className='flex mx-auto'>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/demopage' element={<DemoPage />} />
           </Routes>
         </div>
       </Router>

@@ -35,10 +35,10 @@ const Navbar = () => {
 
           {/* Navbar Links (hidden mobile, shown on m and lg screen) */}
           <div className="hidden md:flex space-x-4 font-bold items-center">
-            <button href="#" className='text-black hover:text-gray-300 bg-orange-300 outline-blue-300 border-2 px-3 py-1 rounded-md'>Read ePaper</button>
-            <button href="#" className='text-white hover:text-gray-300 uppercase bg-red-600 border-2 px-3 py-1 rounded-md'>Subscribe to np+</button>
+            <button href="#" className='text-black hover:text-gray-700 bg-orange-300 outline-blue-300 border-2 px-3 py-1 rounded-md'>Read ePaper</button>
+            <button href="#" className='text-white hover:text-gray-300 uppercase bg-red-600 border-2 px-3 py-1 rounded-md'>Subscribe to fs+</button>
 
-            <a href="#" className='text-black hover:text-gray-300 uppercase'>Sign In</a>
+            <a href="#" className='text-black hover:text-gray-700 uppercase'>About Us</a>
           </div>
 
           {/* Hamburger Menu */}
