@@ -13,7 +13,7 @@ const path = require('path');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'https://file-trasfer-server.vercel.app',
+    origin: 'https://file-trasfer-main.vercel.app',
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
