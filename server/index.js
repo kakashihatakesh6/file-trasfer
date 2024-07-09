@@ -9,7 +9,7 @@ const { default: axios } = require('axios');
 const ConnectMongo = require('./config/db');
 const path = require('path');
 
-//
+// Body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors({
